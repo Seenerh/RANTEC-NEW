@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rantec | Signup form</title>
+    <!-- favicon icon -->
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon/signup-icon.png">
+    <!-- css custom stylesheet -->
+    <link rel="stylesheet" href="./styles/signup.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- form container markup -->
+    <section class="container forms">
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="text" placeholder="FullName" class="input" required>
+                    </div>
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password" required>
+
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password" required>
+                        <i class='bx bxs-hide eye-icon'></i>
+                    </div>
+
+                    <div class="select">
+                        <label for type="text" class="input">Signup as</label>
+                    </div>
+                    <select name="field" id="option-input">
+                        <option value="text"></option>
+                        <option value="Livestock farmer" >Livestock farmer</option>
+                        <option value="veterinary">Veterinary Doctor</option>
+                    </select>
+
+                    <div class="field button-field">
+                        <a class="sign-up" href="home.html">Signup</a>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Already have an account? <a href="login.html"class= "link signup-link">Login</a> </span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+            <!-- social icon markup -->
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="./images/google-icon.png" alt="Google-icon" class="google-img"><span> continue with Google</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook-circle facebook-icon'></i><span>continue with Facebook</span>
+                </a>
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- javascript file -->
+    <script src="./scripts/form.js"></script>
+</body>
+
+</html>
