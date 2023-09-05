@@ -24,16 +24,29 @@
             <div class="form-content">
                 <header>Signup</header>
 
-                <form action="#">
-                    <div class="field input-field">
-                        <input type="text" placeholder="FullName" class="input" required>
+                <form  id="signup-form" action="#">
+                    <div class="select">
+                        <label for="role" type="text" class="input"></label>
                     </div>
-                    <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input" required>
-                    </div>
+                    <select name="role" id="role">
+                        <option value="empty">Select your role</option>
+                        <option value="farmer">Farmer</option>
+                        <option value="doctor">Doctor</option>
+                      </select>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Password" class="password" required>
+                        <input type="text" placeholder="FullName" name="fullname"  class="input" required>
+                    </div>
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" name="email" class="input" required>
+                    </div>
+
+                    <div  class="field input-field" id="vet-fields" style="display: none;">
+                        <input type="text" class="input" name="license" placeholder="License Number" id="license" name="license">
+                        </div>
+
+                    <div class="field input-field">
+                        <input type="text" name="location" placeholder="Location" class="input" required>
 
                     </div>
 
@@ -42,17 +55,8 @@
                         <i class='bx bxs-hide eye-icon'></i>
                     </div>
 
-                    <div class="select">
-                        <label for type="text" class="input">Signup as</label>
-                    </div>
-                    <select name="field" id="option-input">
-                        <option value="text"></option>
-                        <option value="Livestock farmer" >Livestock farmer</option>
-                        <option value="veterinary">Veterinary Doctor</option>
-                    </select>
-
                     <div class="field button-field">
-                        <a class="sign-up" href="home.html">Signup</a>
+                        <button type="submit" id="signup-button" class="sign-up">Sign Up</button>
                     </div>
                 </form>
                 <div class="form-link">
@@ -78,7 +82,25 @@
         </div>
 
     </section>
+
+    <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("role").addEventListener("change", function() {
+    const vetFields = document.getElementById("vet-fields");
+    if (this.value === "vet") {
+        vetFields.style.display = "block";
+    } else {
+        vetFields.style.display = "none";
+    }
+});
+});
+
+        
+      </script>
+
     <!-- javascript file -->
+    <script src="./scripts/signupapi.js"></script>
     <script src="./scripts/form.js"></script>
 </body>
 

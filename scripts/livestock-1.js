@@ -32,9 +32,3 @@ document.addEventListener("DOMContentLoaded", function() {
     reader.readAsDataURL(file);
   });
 });
-
-fetch('nav.html')
-.then(response => response.text())
-.then(data => {
-  document.getElementById('menu').innerHTML = data;
-});

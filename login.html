@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rantec|Loign form</title>
+    <title>Rantec|Login form</title>
 
     <!-- favicon icon -->
     <link rel="shortcut icon" type="image/jpg" href="images/favicon/login-icon.png">
@@ -28,7 +28,7 @@
             <div class="form-content">
                 <header><img src="./images/logo.png" alt="" width="80" height="50"></header>
 
-                <form action="#">
+                <form  id="login-form" action="#">
                     <div class="field input-field">
                         <input type="email" placeholder="Email" class="input" required>
                     </div>
@@ -43,7 +43,8 @@
                     </div>
                     
                     <div class="field button-field">
-                        <a class="sign-up" href="home.html">Login</a>
+                        <!-- <a class="sign-up" >Login</a> -->
+                        <button type="submit" class="sign-up">Login</button>
                     </div>
                 </form>
                 <div class="form-link">
@@ -71,6 +72,7 @@
     </section>
     <!-- javascript file -->
     <script src="./scripts/form.js"></script>
+    <script src = "./scripts/api.js"></script>
 </body>
 
 </html>

@@ -100,6 +100,7 @@ select,
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 5px;
+    padding-left: 0.5rem;
     outline: none;
     border: 1px solid #cacaca;
 }
@@ -154,7 +155,7 @@ select:focus {
     padding: 5px;
 }
 
-a.sign-up {
+button.sign-up {
     color: #fff;
     background-color: #4267b2;
     transition: all 0.3s ease;
@@ -165,11 +166,6 @@ a.sign-up {
     align-items: center;
     justify-content: center;
 }
-
-a.sign-up:hover {
-    /* background-color: #aec9e0; */
-}
-
 .line {
     position: relative;
     height: 1px;

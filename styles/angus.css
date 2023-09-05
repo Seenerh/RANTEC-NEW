@@ -55,7 +55,7 @@ body{
 
 }
 #menu .items li:nth-child(1){
-  border-left: 2px solid #fff;
+  /* border-left: 2px solid #fff; */
  
 }
 #menu .items li i, #menu .items li a:hover{
